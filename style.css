@@ -10,29 +10,44 @@
 }
 
 .titleicon {
-
+    fill: white;
+    height: 4rem;
+    width: 4rem;
 }
 
-.options{
+.options {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-weight: bold;
     gap: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
-li {
-    margin-top: 15px;
-    font-size: x-large;
+#icons {
+    height: 1.7rem;
+    width: 1.7rem;
+    fill: white;
 }
 
-li:first-child {
-    margin-top:0;
-}
-
-li:hover {
+.sidebaroption:hover {
     color: rgb(255, 208, 0);
     cursor: pointer;
+}
+
+.options1 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+}
+
+.options2 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
 }
 
 .sidebar {
@@ -45,6 +60,7 @@ li:hover {
 .main {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .header {
@@ -124,6 +140,11 @@ p {
     box-shadow: 5px 5px 5px rgb(182, 182, 182);
 }
 
+#box:hover {
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
+}
+
 .box1,
 .box2,
 .box4,
@@ -133,9 +154,40 @@ p {
     border-left: solid 5px rgb(255, 208, 0);
 }
 
+.box3grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: small;
+}
+
+.box3sec1,
+.box3sec2 {
+    border-bottom: solid 2px rgb(78, 78, 78, 0.5);
+}
+
+#box3sec {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .box6 {
     grid-row: 2 / 4;
     grid-column: 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
+#trendingheader {
+    grid-column: 1 / 3;
+}
+
+#trendingicon {
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 body {
