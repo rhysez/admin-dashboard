@@ -260,4 +260,5 @@ body {
     background-color:rgb(221, 221, 221);
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
 }
